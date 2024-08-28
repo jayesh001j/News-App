@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Splash_Screen">
+
+    <RelativeLayout
+        android:id="@+id/maine"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/splay"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/splayscren"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_below="@+id/maine"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:text="All type of news from all trusted sources for all type of people"
+            android:textColor="#515253"
+            android:gravity="center"
+            android:textSize="14sp"/>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

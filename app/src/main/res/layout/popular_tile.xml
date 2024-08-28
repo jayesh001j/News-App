@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="08sp"
+    app:cardCornerRadius="08sp"
+    app:cardMaxElevation="04sp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- News Image Section -->
+        <ImageView
+            android:id="@+id/news_image"
+            android:layout_width="match_parent"
+            android:layout_height="150sp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/news_image"
+            android:contentDescription="News Image"/>
+
+        <!-- Headline Section -->
+        <TextView
+            android:id="@+id/Headline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mohali blast: Police find dump of 7,000 mobile phones, Oppo knocks security lapses"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Author and Timestamp -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/author_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/author_image"
+                android:layout_marginRight="8dp"
+                android:contentDescription="Author Image"
+                android:scaleType="centerCrop"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+
+            <TextView
+                android:id="@+id/author_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lian Li"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/verified_icon"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_verified"
+                android:layout_marginLeft="4dp"
+                android:contentDescription="Verified Icon"/>
+        </LinearLayout>
+
+        <!-- Description Section -->
+        <TextView
+            android:id="@+id/Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Saturday's report warned that rising sea levels brought by climate change were having a 'continuous impact' on the development of coastal regions, and urged authorities to improve monitoring and bolster early warning and prevention efforts."
+            android:layout_marginTop="8dp"/>
+
+        <!-- Read More Link -->
+        <TextView
+            android:id="@+id/read_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Read More"
+            android:textColor="#2196F3"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Interaction Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/like_button"
+                android:layout_width="24sp"
+                android:layout_height="24sp"
+                android:src="@drawable/ic_like"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Like Button"
+                android:layout_marginRight="16dp"/>
+
+            <ImageView
+                android:id="@+id/comment_button"
+                android:layout_width="24sp"
+                android:layout_height="24sp"
+                android:src="@drawable/ic_baseline_share_24"
+                android:layout_marginRight="16dp"/>
+
+            <ImageView
+                android:id="@+id/share_button"
+                android:layout_width="24sp"
+                android:layout_height="24sp"
+                android:src="@drawable/ic_comment"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Share Button"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:text="96 Comments"/>
+
+            <TextView
+                android:id="@+id/views_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15sp"
+                android:text="4.5k Views"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+    <!-- Footer Section -->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:gravity="space_between"-->
+<!--        >-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/comments_count"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="96 Comments"/>-->
+
+<!--    </LinearLayout>-->
+</LinearLayout>
